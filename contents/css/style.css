@@ -301,6 +301,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     -webkit-transition: 0.2s padding;
     transition: 0.2s padding;
     z-index: 999;
+    padding-bottom: 10px !important;
 }
 
 #nav.navbar {
@@ -326,13 +327,30 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 /* -- default nav -- */
 
 @media only screen and (min-width: 768px) {
+    .navbar-brand .logo, .navbar-brand .logo-alt {
+        max-height: 100px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-header{
+        background:transparent !important
+    }
+
+    .navbar-right{
+        height: 100px !important;
+    }
+
     .main-nav li {
+        top: 25%;
         padding: 0px 15px;
     }
     .main-nav li a {
-        font-size: 14px;
+        font-size: 25px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
+        text-align: center
     }
     .main-nav>li>a {
         color: #10161A;
@@ -455,6 +473,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         transform: translateX(0%);
         width: 100%;
     }
+
     .main-nav li {
         border-top: 1px solid rgba(250, 250, 250, 0.1);
     }
@@ -507,6 +526,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- nav btn collapse -- */
 
+/* .navbar-header{
+    background: #1C1D21;
+} */
+
 .nav-collapse {
     position: relative;
     float: right;
@@ -536,7 +559,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .nav-collapse span, .nav-collapse span:before, .nav-collapse span:after {
     height: 4px;
-    background: #10161A;
+    background: #000;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
@@ -593,9 +616,7 @@ header {
     text-align: center;
 }
 
-.home-content h1 {
-  text-transform: uppercase;
-}
+
 .home-content button {
   margin-top: 20px;
 }
@@ -1670,6 +1691,12 @@ header {
 	Preloader
 \*------------------------------------*/
 
+#loaderQuote{
+    position: absolute;
+    top: 55%;
+    left: 20vw;
+    width: 60vw;
+}
 
 #preloader {
     position: fixed;

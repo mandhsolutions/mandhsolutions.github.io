@@ -90,4 +90,41 @@
 		}
 	});
 
+	$(".main-btn").click(function(event){
+		event.preventDefault();
+		
+		var container = $(this).parent("form");
+
+		var name = container.find("[name='Name']").val();
+		var email = container.find("[name='Email']").val();
+		var subject = container.find("[name='Subject']").val();
+		var message = container.find("[name='Message']").val();
+
+		var mail = ("Name: " + name + "\n");
+			mail += ("Email: " + email + "\n");
+			mail += ("Subject: " + subject + "\n");
+			mail += ("Message: " + message + "\n");
+			
+
+		var url = "https://formspree.io/mandhsolution@gmail.com";
+
+		$.ajax({
+			url: url,
+			type: "post",
+			data: {
+				text: mail,
+				email: email
+			},
+			success: function(result){
+				alert("Mail sent.");
+				window.location.reload();
+			},
+			error: function(result){
+				alert("Error while sending mail.");
+			}
+		});
+
+		return false;
+	});
+
 })(jQuery);
