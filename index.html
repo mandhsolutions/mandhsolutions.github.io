@@ -38,6 +38,20 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <center style="top:50%;">
+                <i class="fa fa-times fa-3x" id="close_button"></i><br>
+
+                <iframe class="video-container" style="width:50vw;height:50vh" src="https://www.youtube.com/watch?v=Q6lOT7eRx_8"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+    </div>
+
     <!-- Header -->
     <header id="home">
         <!-- Background Image -->
@@ -101,10 +115,12 @@
                     <!-- /home content -->
 
                 </div>
-                <center>
-                    <iframe class="video-container" style="width:50vw;height:50vh"  src="https://www.youtube.com/embed/jbnN46vHj0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </center>
+                <!-- Button trigger modal -->
+                <button type="button" style="opacity:1" class="btn btn-primary" id="open_modal" data-toggle="modal" data-target="#exampleModal">
+                    Watch the introduction video.
+                </button>
+
+
             </div>
         </div>
         <!-- /home wrapper -->
@@ -409,11 +425,11 @@
     <script type="text/javascript" src="../contents/js/main.js"></script>
 
     <!--Debug-->
-    <!--<script type="text/javascript" src="./contents/js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./contents/js/jquery.min.js"></script>
     <script type="text/javascript" src="./contents/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./contents/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./contents/js/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="./contents/js/main.js"></script>-->
+    <script type="text/javascript" src="./contents/js/main.js"></script> -->
 </body>
 
 </html>

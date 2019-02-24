@@ -38,6 +38,21 @@
 </head>
 
 <body>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <center style="top:50%;">
+                            <i class="fa fa-times fa-3x" id="close_button"></i><br>
+
+                            <iframe class="video-container" style="width:50vw;height:50vh" src="https://www.youtube.com/watch?v=aCGcsfouyq4"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </center>
+                    </div>
+                </div>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
     <!-- Header -->
     <header id="home">
         <!-- Background Image -->
@@ -100,10 +115,11 @@
                     <!-- /home content -->
 
                 </div>
-                <center>
-                    <iframe class="video-container" style="width:50vw;height:50vh" src="https://www.youtube.com/embed/887_Xv5hFHs" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </center>
+                <button type="button" style="opacity:1" class="btn btn-primary" id="open_modal" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Tanıtım videosunu izle.
+                </button>
+
             </div>
         </div>
         <!-- /home wrapper -->
@@ -166,7 +182,8 @@
                     <div class="overlay"></div>
                     <div class="work-content">
                         <span>Sevgilin için</span>
-                        <h3>Fotoğraf düzenleyebilir, sevgilin için güzel sözler bulabilir ve hediye fikirleri alabilirsin.</h3>
+                        <h3>Fotoğraf düzenleyebilir, sevgilin için güzel sözler bulabilir ve hediye fikirleri
+                            alabilirsin.</h3>
                         <div class="work-link">
                             <a class="lightbox" target="_blank" href="https://play.google.com/store/apps/details?id=com.mandhsolutions.foryourlover"><i
                                     class="fa fa-google"></i></a>
