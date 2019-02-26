@@ -127,4 +127,16 @@
 		return false;
 	});
 
+
+	$(document).ready(function(){
+setTimeout(() => {
+	$("#open_modal").click()
+}, 1050);
+
+$("body").on("click", "#close_button", function(){
+	$("#exampleModal").modal("hide");
+})
+
+	})
+
 })(jQuery);

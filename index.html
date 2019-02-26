@@ -38,6 +38,19 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <center style="top:50%;">
+                <i class="fa fa-times fa-3x" id="close_button"></i><br>
+                <iframe class="video-container" style="width:50vw;height:50vh" src="https://www.youtube.com/embed/Q6lOT7eRx_8"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </center>
+        </div>
+    </div>
+
     <!-- Header -->
     <header id="home">
         <!-- Background Image -->
@@ -72,7 +85,7 @@
                     <li><a href="#service">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="has-dropdown open-drop"><a >Language</a>
+                    <li class="has-dropdown open-drop"><a>Language</a>
                         <ul class="dropdown">
                             <li><a href="./turkish/index.html">Turkish</a></li>
                         </ul>
@@ -86,6 +99,7 @@
         <!-- home wrapper -->
         <div class="home-wrapper">
             <div class="container">
+
                 <div class="row">
 
                     <!-- home content -->
@@ -100,6 +114,13 @@
                     <!-- /home content -->
 
                 </div>
+                <!-- Button trigger modal -->
+                <button type="button" style="opacity:1" class="btn btn-primary" id="open_modal" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Watch the introduction video.
+                </button>
+
+
             </div>
         </div>
         <!-- /home wrapper -->
