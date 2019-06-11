@@ -788,6 +788,7 @@ header {
     transition: 0.2s all;
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
+    font-size:15px !important;
 }
 
 .work:hover .work-content h3 {
